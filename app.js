@@ -46,14 +46,16 @@ boxes.forEach(function (box) {
 });
 
 const disableBoxes = function () {
-    for (let box of boxes) {
-        box.close = true;
+    for (let i = 0; i < boxes.length; i++) {
+        let box = boxes[i];
+        box.disabled = true;
     }
 }
 
 const enableBoxes = function () {
-    for (let box of boxes) {
-        box.close = false;
+    for (let i = 0; i < boxes.length; i++) {
+        let box = boxes[i];
+        box.disabled = false;
         box.innerText = "";
     }
 }
@@ -71,9 +73,9 @@ const showWinner = function (winner) {
     }
 };
 
-
 const checkWinner = function () {
-    for (let pattern of winPatterns) {
+    for (let i = 0; i < winPatterns.length; i++) {
+        let pattern = winPatterns[i];
         let pos1value = boxes[pattern[0]].innerText;
         let pos2value = boxes[pattern[1]].innerText;
         let pos3value = boxes[pattern[2]].innerText;
