@@ -35,7 +35,7 @@ h1 {
     width: 18vmin;
     border-radius: 16px;
     border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
     color: #b0413e;
     background-color: #ededb4;
@@ -70,9 +70,20 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 64px;
+    gap: 65px;
 }
 
 .hide {
     display: none;
+}
+
+#scores {
+    /* background-color: black; */
+    color: red;
+    font-size: 20px;
+    margin-left: 280px;
+    padding: 10px;
+    margin-right: 280px;
+    margin-bottom: 30px;
+    text-align: center;
 }
