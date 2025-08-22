@@ -37,7 +37,6 @@ h1 {
     border: none;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
-    color: #b0413e;
     background-color: #ededb4;
 }
 
@@ -78,7 +77,6 @@ h1 {
 }
 
 #scores {
-    /* background-color: black; */
     color: red;
     font-size: 20px;
     margin-left: 280px;
